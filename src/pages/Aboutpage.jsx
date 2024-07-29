@@ -27,7 +27,7 @@ const About = () => {
     <div className="mt-16 max-w-7xl mx-auto p-6 flex bg-violet-200">
       <div className="w-3/4 pr-6">
         <div className="mb-8 p-4">
-          <h1 className="text-4xl font-semibold mb-4 relative group">
+          <h1 className="text-4xl mb-4 relative group font-bold">
             About Me
           <span className="absolute left-0 bottom-0 w-0 h-1 bg-black transition-all duration-500 group-hover:w-40"></span>
           </h1>
