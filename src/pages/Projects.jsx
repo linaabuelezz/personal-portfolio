@@ -1,7 +1,8 @@
 import React from 'react';
 import mymedicalarchive from "../assets/mymedicalarchive.png";
 import tacticmanager from "../assets/tacticmanager.png";
-import mooddrivenmelodies from "../assets/mooddrivenmelodies.png"
+import mooddrivenmelodies from "../assets/mooddrivenmelodies.png";
+import memorymatch from "../assets/memorymatch.png";
 
 const projects = [
   {
@@ -25,6 +26,13 @@ const projects = [
     github: 'https://github.com/linaabuelezz/Mood-driven-Melodies',
     website: 'https://mood-driven-melodies.vercel.app/',
   },
+  {
+    image: memorymatch,
+    title: 'Memory-match',
+    languages: ['Next.js', 'Typescript', 'Tailwind CSS', 'Prisma','Node.js'],
+    github: 'https://github.com/linaabuelezz/memory-match',
+    website: 'https://memory-match-chi.vercel.app/'
+  }
 ];
 
 const Projects = () => {
