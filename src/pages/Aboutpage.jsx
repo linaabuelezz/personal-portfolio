@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, Element } from 'react-scroll';
+import { Element } from 'react-scroll';
 import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
 
 const About = () => {
@@ -37,14 +37,14 @@ const About = () => {
   };
 
   return (
-    <div className="mt-16 max-w-7xl mx-auto p-6 flex bg-violet-200">
-      <div className="w-3/4 pr-6">
+    <div className="mt-16 max-w-7xl mx-auto p-6 flex flex-col lg:flex-row bg-violet-200">
+      <div className="w-full lg:w-3/4 pr-0 lg:pr-6">
         <div className="mb-8 p-4">
-          <h1 className="text-4xl mb-4 relative group font-bold">
+          <h1 className="text-3xl lg:text-4xl mb-4 relative group font-bold">
             About Me
             <span className="absolute left-0 bottom-0 w-0 h-1 bg-black transition-all duration-500 group-hover:w-40"></span>
           </h1>
-          <p className="text-lg">
+          <p className="text-base lg:text-lg">
             Welcome to my About Me page! Here you'll find information about my education, involvement in clubs and organizations, and extracurricular activities. Click on the titles to expand each section and learn more about my experiences and interests.
           </p>
         </div>
@@ -107,7 +107,7 @@ const Section = ({ title, children, isOpen, onToggle }) => {
     <div className="mb-8 p-4 border border-gray-300 bg-white rounded-lg shadow-md">
       <div className="flex justify-between items-center">
         <h2
-          className="text-2xl font-semibold mb-2 hover:text-gray-500 hover:cursor-pointer"
+          className="text-xl lg:text-2xl font-semibold mb-2 hover:text-gray-500 hover:cursor-pointer"
           onClick={onToggle}
         >
           {title}
@@ -117,7 +117,7 @@ const Section = ({ title, children, isOpen, onToggle }) => {
         </div>
       </div>
       <hr className="border-b-2 border-black w-24 mb-4" />
-      {isOpen && <div className="text-lg">{children}</div>}
+      {isOpen && <div className="text-base lg:text-lg">{children}</div>}
     </div>
   );
 };

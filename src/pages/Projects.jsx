@@ -6,21 +6,21 @@ import memorymatch from "../assets/memorymatch.png";
 
 const projects = [
   {
-    image: mymedicalarchive, 
+    image: mymedicalarchive,
     title: 'MyMedicalArchive',
     languages: ['React', 'Tailwind CSS', 'Cloudinary', 'Firebase'],
     github: 'https://github.com/linaabuelezz/myMedicalArchive',
     website: 'https://my-medical-archive.vercel.app/',
   },
   {
-    image: tacticmanager, 
+    image: tacticmanager,
     title: 'Tactic-manager',
     languages: ['React', 'Tailwind CSS', 'React-Youtube'],
     github: 'https://github.com/linaabuelezz/tactic-manager',
     website: 'https://tactic-manager.vercel.app/',
   },
   {
-    image: mooddrivenmelodies, 
+    image: mooddrivenmelodies,
     title: 'Mood-driven melodies',
     languages: ['React', 'Tailwind CSS', 'Google Cloud', 'Spotify API'],
     github: 'https://github.com/linaabuelezz/Mood-driven-Melodies',
@@ -29,7 +29,7 @@ const projects = [
   {
     image: memorymatch,
     title: 'Memory-match',
-    languages: ['Next.js', 'Typescript', 'Tailwind CSS', 'Prisma','Node.js'],
+    languages: ['Next.js', 'Typescript', 'Tailwind CSS', 'Prisma', 'Node.js'],
     github: 'https://github.com/linaabuelezz/memory-match',
     website: 'https://memory-match-chi.vercel.app/'
   }

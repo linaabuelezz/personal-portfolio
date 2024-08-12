@@ -14,7 +14,7 @@ const Experience = () => {
       description: [
         'Worked with Digital Health team to find new solutions and ensure requirements are met.',
         'Researched many topics and prepared presentations to talk about in front of team, as well as being present in important meetings and taking notes.',
-        'Worked on many future projects and helped pcreate plan and prepare team.',
+        'Worked on many future projects and helped create plan and prepare team.',
       ],
     },
     {
@@ -23,7 +23,7 @@ const Experience = () => {
       title: 'Frontend Developer',
       duration: 'June 2024 - Aug 2024',
       description: [
-        'Worked alongside a developer to  learn and develop interactive websites.',
+        'Worked alongside a developer to learn and develop interactive websites.',
         'Worked with various frontend technologies and studied databases.',
         'Had deadlines to follow and studied hard javascript concepts.',
       ],
@@ -45,7 +45,7 @@ const Experience = () => {
       title: 'English Teaching Assistant',
       duration: 'Nov 2022 - March 2023',
       description: [
-        'Developed and maintained consistent, positive relationships with students.',
+        'Developed and maintained consistent, positive relationships with students.',
         'Corrected over 150 quizzes and tests, including writing assignments.',
         'Grew ability to work independently while completing assigned tasks without supervision.',
       ],
@@ -61,11 +61,11 @@ const Experience = () => {
         </h1>
         <p className="text-lg">Here is a summary of my professional experience and the roles I've undertaken over the years.</p>
       </div>
-      <div className="flex">
-        <div className="relative w-1/4">
+      <div className="flex flex-col md:flex-row">
+        <div className="relative w-full md:w-1/4 mb-8 md:mb-0">
           <div className="absolute left-1/2 transform -translate-x-1/2 h-full border-l-2 border-dotted border-gray-400"></div>
         </div>
-        <div className="w-2/4">
+        <div className="w-full md:w-1/2">
           {experiences.map((exp, index) => (
             <div key={index} className="mb-8 p-4 border border-gray-300 bg-white rounded-lg shadow-md flex">
               <img src={exp.logo} alt={`${exp.company} logo`} className="w-12 h-12 mr-4" />
@@ -90,6 +90,5 @@ const Experience = () => {
     </div>
   );
 };
-
 
 export default Experience;
