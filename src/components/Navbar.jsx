@@ -62,15 +62,26 @@ const Navbar = () => {
         </div>
       </div>
       {isMenuOpen && (
-        <div className="md:hidden">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <Link to="/" className="text-gray-800 hover:text-blue-300 block px-3 py-2 rounded-md text-base font-medium">Home</Link>
-            <Link to="/about" className="text-gray-800 hover:text-blue-300 block px-3 py-2 rounded-md text-base font-medium">About Me</Link>
-            <Link to="/experience" className="text-gray-800 hover:text-blue-300 block px-3 py-2 rounded-md text-base font-medium">Experience</Link>
-            <Link to="/projects" className="text-gray-800 hover:text-blue-300 block px-3 py-2 rounded-md text-base font-medium">Projects</Link>
-            <button onClick={handleResumeClick} className="bg-blue-400 hover:bg-blue-700 hover:scale-110 text-white font-bold py-2 px-4 rounded block w-full text-left">
-              Resume
-            </button>
+        <div className="fixed inset-0 bg-gray-800 bg-opacity-90 z-40 md:hidden">
+          <div className="flex flex-col items-center justify-center h-full">
+            <div className="bg-white p-6 rounded-lg shadow-lg w-3/4 max-w-md">
+              <div className="flex justify-end mb-4">
+                <button onClick={toggleMenu} className="text-gray-800 hover:text-blue-300">
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
+                  </svg>
+                </button>
+              </div>
+              <div className="space-y-4">
+                <Link to="/" onClick={toggleMenu} className="text-gray-800 hover:text-blue-300 block text-xl">Home</Link>
+                <Link to="/about" onClick={toggleMenu} className="text-gray-800 hover:text-blue-300 block text-xl">About Me</Link>
+                <Link to="/experience" onClick={toggleMenu} className="text-gray-800 hover:text-blue-300 block text-xl">Experience</Link>
+                <Link to="/projects" onClick={toggleMenu} className="text-gray-800 hover:text-blue-300 block text-xl">Projects</Link>
+                <button onClick={handleResumeClick} className="bg-blue-400 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full text-center">
+                  Resume
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       )}
