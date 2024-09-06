@@ -21,7 +21,7 @@ const Navbar = () => {
   }, []);
 
   const handleResumeClick = () => {
-    window.open('https://drive.google.com/file/d/1K98QKfhA64irS7LK2dSMGNjE-QOIUKmJ/view?usp=sharing', '_blank');
+    window.open('https://drive.google.com/file/d/1EFmb1GhDULy-mWlaqkF5Y-KRgjj7O7y5/view?usp=sharing', '_blank');
   };
 
   const toggleMenu = () => {
